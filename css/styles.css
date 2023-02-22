@@ -1,0 +1,336 @@
+:root {
+    --color-main: #2196F3;
+    --color-secondary: #757575;
+    --color-background-sections: #2F303A;
+    --color-text-main: #212121;
+    --color-text-light: #FFFFFF;
+    --color-secondary-back: #F5F4FA;
+    --color-active: #0000ff;
+    --color-border-head: #ECECEC;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address{
+    font-style: normal;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+    color: var(--color-text-main);
+}
+
+.list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+    color: var(--color-text-main);
+    text-decoration: none;
+}
+
+.container {
+width: 100%;
+}
+
+.container-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.logo-principal {
+    color: var(--color-main);
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    padding: 10px;
+    }
+
+.principal-options {
+    color: var(--color-text-main);
+    font-size: 14px;
+    line-height: 1.1;
+    text-decoration: none;
+    width: 300px;
+    margin-right: 25rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;  
+}
+
+.informative-data {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    padding: 30px;
+}
+
+.link:hover, .link:focus {
+color: var(--color-main);
+text-decoration: none;
+}
+
+.link-contacts {
+    color: var(--color-secondary);
+    font-size: 14px;
+    line-height: 1.1;
+    text-decoration: none;
+}
+.link-contacts:hover, .link-contacts:focus {
+    color: var(--color-main);
+}
+
+/* Seccion principal */
+
+.section {
+    padding: 94px;
+}
+
+.main-section {
+    display: flex;
+    height: 80vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-background-sections);
+}
+.principal-title {
+    width: 570px;
+    color: white;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* Boton de servicio principal */
+
+.service-button {
+    background-color: var(--color-main);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 10px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.service-button[value="Solicitar un Servicio"]:hover, .service-button[value="Solicitar un Servicio"]:focus {
+    background-color: var(--color-active);
+}
+
+.button {
+    cursor: pointer;
+    font-family: inherit;
+    border-style: none;
+    border-radius: 4px;
+    padding: 10px;
+}
+.button:hover, .button:focus {
+    background-color: var(--color-main);
+    color: var(--color-text-light);
+    font-family: inherit;
+
+}
+
+.advantages-list-main {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.advantages-section {
+    padding: 94px 94px 0 94px;
+}
+
+.advantages-list-main > li > p {
+    color: var(--color-secondary);
+    font-size: 14px;
+    line-height: 1.7;
+    width: 270px;
+}
+
+.img-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.design-doit {
+    height: 105vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.design-doit > h2 {
+    font-size: 36px;
+    line-height: 1.1;
+}
+
+.professionals-team > h2 {
+    font-size: 36px;
+    line-height: 1.1;
+}
+
+.professionals-team {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-secondary-back);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.professionals-list > li > p {
+    color: var(--color-secondary);
+    font-size: 16px;
+    line-height: 1.1;
+    padding: 15px;
+}
+
+.professionals-list > li > img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.professionals-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.professionals-list > li {
+    background-color: var(--color-text-light);
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px var(--color-secondary);    
+}
+
+/*Seccion del Footer*/
+
+.address-area {
+    text-decoration: none;
+    font-style: normal;
+    width: 600px;
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    margin: 0;
+}
+
+.link-address {
+    font-style: normal;
+    font-weight: 400;
+    color: var(--color-text-light);
+    text-decoration: none;
+}
+.link-address:hover, .link-address:focus {
+    color: var(--color-main);
+    text-decoration: none;
+}
+.address-area > li:hover {
+color: var(--color-main);
+text-decoration: none;
+}
+.address-section {
+    background-color: var(--color-background-sections);
+    padding: 0 15px;
+    height: 35vh;
+}
+
+/*Seccion principal Portfolio */
+
+.plataforms-descriptions >li > p {
+color: var(--color-secondary);
+line-height: 1.8;
+padding: 15px;
+}
+.plataforms-descriptions >li >h2 {
+    font-family: inherit;
+    font-size: 18px;
+    padding: 15px 15px 0 15px;
+}
+.plataforms-descriptions >li {
+    font-family: inherit;
+    font-size: 18px;
+    border: 1px solid var(--color-secondary);
+    border-style: none;
+    margin-top: 20px;
+}
+
+.plataforms-descriptions >li:hover  {
+    font-family: inherit;
+    font-size: 18px;
+    border: 1px solid var(--color-secondary);
+    border-style: none;
+    box-shadow: 2px 2px 4px var(--color-secondary);
+    cursor: pointer;
+}
+
+.current {
+    color: var(--color-main);
+}
+.current-button {
+    background-color: var(--color-main);
+    color: var(--color-text-light);
+}
+.list-buttons {
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+.topics-plataforms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plataforms-descriptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 35px;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+
+.head-bord {
+    border-bottom: 1px solid var(--color-border-head);
+}
