@@ -1,12 +1,13 @@
 :root {
     --color-main: #2196F3;
     --color-secondary: #757575;
-    --color-background-sections: #2F303A;
+    --color-background-sections: rgb(47, 48, 58);
     --color-text-main: #212121;
     --color-text-light: #FFFFFF;
     --color-secondary-back: #F5F4FA;
     --color-active: #0000ff;
     --color-border-head: #ECECEC;
+    --color-border-clients: #adb1b8;
 }
 
 h1,h2,h3,h4,h5,h6,p{
@@ -83,7 +84,7 @@ width: 100%;
 .informative-data {
     display: flex;
     justify-content: space-between;
-    width: 350px;
+    width: 400px;
     padding: 30px;
 }
 
@@ -105,7 +106,8 @@ text-decoration: none;
 /* Seccion principal */
 
 .section {
-    padding: 94px;
+    padding: 94px 50px 94px 50px;
+
 }
 
 .main-section {
@@ -178,18 +180,16 @@ text-decoration: none;
     width: 270px;
     margin-top: 10px;
 }
-.advantages-list-main > li > svg {
+
+.icon-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--color-border-head);
     width: 270px;
     height: 130px;
     margin-bottom: 20px;
     border-radius: 5px;
-}
-
-.advantages-list-main > svg > path {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .img-list {
@@ -198,13 +198,31 @@ text-decoration: none;
     justify-content: space-between;
 }
 
+.img-list > li {
+    position: relative;
+}
+
 .design-doit {
-    height: 105vh;
+    height: 115vh;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
     }
+
+.title-designdoit-list {
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--color-secondary-back);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 370px;
+    bottom: 0px;
+}
 
 .design-doit > h2 {
     font-size: 36px;
@@ -214,11 +232,12 @@ text-decoration: none;
 .professionals-team > h2 {
     font-size: 36px;
     line-height: 1.1;
+    padding-bottom: 70px;
 }
 
 .professionals-team {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-color: var(--color-secondary-back);
     display: flex;
     flex-direction: column;
@@ -241,14 +260,13 @@ text-decoration: none;
 
 .professionals-list {
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
 }
 
 .professionals-list > li {
     background-color: var(--color-text-light);
-    margin: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -256,6 +274,50 @@ text-decoration: none;
     border-radius: 4px;
     box-shadow: 2px 2px 3px var(--color-secondary);    
 }
+
+.icons-socialmedia-group {
+    width: 270px;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 15px 15px 15px;
+}
+
+/*seccion Clientes Regulares */
+
+.regulars-clients {
+    width: 100%;
+    background-color: var(--color-text-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.regulars-clients > h2 {
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.svg-regulars-clients {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icon-regulars-clients {
+    width: 170px;
+    height: 80px;
+    background-color: var(--color-text-light);
+    border: 1px var(--color-border-clients) solid;
+    border-radius: 4px;
+}
+
+.icon-regulars-clients {
+    padding: 10px;
+}
+
 
 /*Seccion del Footer*/
 
@@ -287,9 +349,27 @@ color: var(--color-main);
 text-decoration: none;
 }
 .address-section {
+    display: flex;
     background-color: var(--color-background-sections);
     padding: 0 15px;
-    height: 35vh;
+    height: 40vh;
+}
+.footer-contact-socialmedia {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.footer-contact-socialmedia > h3 {
+    margin-top: 70px;
+    color: var(--color-text-light);
+    width: 180px;
+    height: auto;
+}
+
+.icons-foot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
 }
 
 /*Seccion principal Portfolio */
@@ -310,6 +390,7 @@ padding: 15px;
     border: 1px solid var(--color-secondary);
     border-style: none;
     margin-top: 20px;
+    box-shadow: 0px 1px 4px var(--color-secondary); 
 }
 
 .plataforms-descriptions >li:hover  {
